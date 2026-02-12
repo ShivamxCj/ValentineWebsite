@@ -42,6 +42,21 @@ export default function ContactSection() {
       className="relative min-h-screen flex items-center justify-center 
                  bg-gradient-to-b from-[#1b0f2f] to-[#720026] px-4 overflow-hidden"
     >
+      {/* Floating Particles */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {[...Array(45)].map((_, i) => (
+          <span
+            key={i}
+            className="absolute w-2 h-2 bg-white/30 rounded-full animate-float"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 5}s`,
+              animationDuration: `${6 + Math.random() * 6}s`,
+            }}
+          />
+        ))}
+      </div>
       {/* Success Popup */}
       {sent && (
         <div
@@ -124,6 +139,42 @@ export default function ContactSection() {
           </button>
         </form>
       </div>
+      {/* Floating Animation */}
+      <style jsx>{`
+        @keyframes float {
+          0% {
+            transform: translateY(0px);
+            opacity: 0.4;
+          }
+          50% {
+            transform: translateY(-25px);
+            opacity: 0.8;
+          }
+          100% {
+            transform: translateY(0px);
+            opacity: 0.4;
+          }
+        }
+
+        .animate-float {
+          animation: float linear infinite;
+        }
+
+        @keyframes fade-in {
+          from {
+            opacity: 0;
+            transform: scale(0.95);
+          }
+          to {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+
+        .animate-fade-in {
+          animation: fade-in 0.6s ease-out forwards;
+        }
+      `}</style>
     </section>
   );
 }
