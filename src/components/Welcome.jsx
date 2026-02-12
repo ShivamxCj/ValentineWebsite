@@ -66,11 +66,11 @@ export default function Welcome({ next }) {
         text-center text-white
         animate-scaleIn"
       >
-        <h1 className="text-2xl sm:text-4xl font-['Rouge Script',cursive] mb-4 drop-shadow-lg italic">
+        <h1 className="text-2xl sm:text-4xl font-['Rouge Script',cursive] mb-4 drop-shadow-lg  romantic">
           Hello Ms. Naina Tiwari 💖
         </h1>
 
-        <p className="text-sm sm:text-lg mb-6 text-white/90 font-['Bad Script',cursive] italic">
+        <p className="text-2xl sm:text-3xl mb-6 text-white/90  fancy">
           Here's a special message from <br />
           <span className="font-semibold">
             Mr. Shivam Chatterjee 💌
@@ -84,7 +84,7 @@ export default function Welcome({ next }) {
           text-white px-8 py-3
           rounded-full text-base sm:text-lg
           font-semibold shadow-xl
-          hover:scale-110 transition font-['Bad Script',cursive]"
+          hover:scale-110 transition handwritten"
         >
           Open My Heart 💝
         </button>

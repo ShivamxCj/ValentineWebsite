@@ -87,7 +87,7 @@ export default function ContactSection() {
           Drop Your Message 💌
         </h2>
 
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4 handwritten">
           <input
             type="text"
             name="name"
@@ -116,7 +116,7 @@ export default function ContactSection() {
             name="message"
             value={form.message}
             onChange={handleChange}
-            placeholder="Your Sweet Message 💖"
+            placeholder="Your Sweet Message 💓"
             rows="4"
             required
             className="w-full px-4 py-3 rounded-xl bg-white/20 backdrop-blur 
@@ -133,7 +133,7 @@ export default function ContactSection() {
     text-[#1b0f2f]
     shadow-lg
     hover:bg-[#2a145a] hover:scale-105 hover:text-pink-300
-    transition disabled:opacity-60 disabled:cursor-not-allowed"
+    transition disabled:opacity-60 disabled:cursor-not-allowed handwritten"
           >
             {loading ? "Sending..." : "Send Message 💘"}
           </button>

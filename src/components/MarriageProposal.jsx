@@ -55,7 +55,7 @@ const moveNo = () => {
               Together forever, hand in hand, heart to heart ✨
             </p>
 
-            <div className="relative flex justify-center gap-12 items-center h-24">
+            <div className="relative flex justify-center gap-12 items-center h-24 handwritten">
   <button
     onClick={() => setYes(true)}
     className="bg-gradient-to-r from-green-400 to-emerald-500 
@@ -71,11 +71,11 @@ const moveNo = () => {
     style={{
       transform: `translate(${noPos.x}px, ${noPos.y}px)`,
     }}
-    className="relative bg-gradient-to-r from-red-500 to-pink-500 
+    className="relative bg-gradient-to-r from-blue-800 to-purple-900 
                text-white px-10 py-4 rounded-full text-xl font-semibold 
                shadow-lg transition-all duration-300"
   >
-    NO 😈
+    NO 💔
   </button>
 </div>
 
@@ -90,7 +90,7 @@ const moveNo = () => {
               Now you're my forever — my wife 💍👰🤵
             </p>
 
-            <div className="mt-6 text-4xl animate-bounce">💖💖💖</div>
+            <div className="mt-6 text-4xl animate-bounce">💗💗💗</div>
           </div>
         )}
       </div>

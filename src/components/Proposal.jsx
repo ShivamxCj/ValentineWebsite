@@ -65,15 +65,15 @@ export default function Proposal({ next }) {
         className="relative bg-white/15 backdrop-blur-xl border border-white/25
         rounded-3xl shadow-2xl p-8 sm:p-12 max-w-md w-full text-center"
       >
-        <h1 className="text-3xl sm:text-4xl font-bold mb-6 text-white drop-shadow-lg">
-          Will you be my Valentine? 💖
+        <h1 className="text-3xl sm:text-4xl font-bold mb-6 text-white drop-shadow-lg fancy">
+          Will you be my Valentine? <br />💖
         </h1>
 
-        <p className="text-white/85 mb-10 text-lg">
-          I promise unlimited smiles, hugs & happiness 😌✨
+        <p className="text-white/85 mb-10 text-2xl fancy">
+          I promise unlimited smiles, hugs & happiness ✨
         </p>
 
-        <div className="relative flex justify-center gap-10 items-center h-24">
+        <div className="relative flex justify-center gap-10 items-center h-24 handwritten">
           <button
             onClick={handleYes}
             className="bg-gradient-to-r from-[#c77dff] to-[#ff4d8d]

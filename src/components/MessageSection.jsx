@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export default function MessageSection() {
-  const text = "Happy Valentine’s Day Baby 💖";
+  const text = "Happy Valentine’s Day Baby 💝";
   const [displayText, setDisplayText] = useState("");
   const [index, setIndex] = useState(0);
 
@@ -56,7 +56,7 @@ export default function MessageSection() {
         hover:scale-105 transition-all duration-500"
       >
         <h2
-          className="text-2xl sm:text-4xl mb-4
+          className="text-2xl sm:text-4xl mb-10
           font-['Bad Script',cursive]
           text-white drop-shadow-md handwritten"
         >
@@ -72,7 +72,7 @@ export default function MessageSection() {
           aren’t perfect right now — it’s not you, it’s not me, it’s just the
           situation. But no matter what, I believe in us. As long as we’re
           together, everything will be okay.
-          <br /> Happy Valentine’s Day, my love ❤️
+          <br /> <br />Happy Valentine’s Day, my love ❤️
         </p>
       </div>
 

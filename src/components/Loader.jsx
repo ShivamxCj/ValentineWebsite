@@ -44,7 +44,7 @@ export default function Loader({ next }) {
 
       {/* Main Loader */}
      <div className="relative text-center text-white px-6  font-['Bad Script',cursive] italic">
-  <h1 className="text-4xl sm:text-6xl mb-4 drop-shadow-lg tracking-wide">
+  <h1 className="text-4xl sm:text-6xl mb-4 drop-shadow-lg tracking-wide romantic">
     Loading
     <span className="inline-block w-[1.5em] text-left">
       {dots}
