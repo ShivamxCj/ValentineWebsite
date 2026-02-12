@@ -5,7 +5,7 @@ export default function Gallery() {
     <div
       className="relative min-h-screen flex flex-col items-center justify-center
       bg-gradient-to-b from-[#1b0f2f] to-[#720026]
-      px-4 py-16 overflow-hidden"
+      px-4 py-16 overflow-hidden romantic"
     >
       {/* Floating Dots Background */}
       <div className="absolute inset-0 pointer-events-none">

@@ -50,7 +50,7 @@ export default function ContactSection() {
         >
           <div
             className="bg-white rounded-3xl p-8 text-center shadow-2xl 
-                          animate-scaleIn max-w-sm w-full"
+                          animate-scaleIn max-w-sm w-full soft"
           >
             <h3 className="text-3xl font-extrabold text-pink-600 mb-2">
               Message Sent 💖
@@ -68,7 +68,7 @@ export default function ContactSection() {
                       rounded-3xl shadow-2xl p-6 sm:p-10 
                       w-full max-w-lg text-center text-white"
       >
-        <h2 className="text-3xl sm:text-4xl font-extrabold mb-6">
+        <h2 className="text-3xl sm:text-4xl font-extrabold mb-6 handwritten">
           Drop Your Message 💌
         </h2>
 

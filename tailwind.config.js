@@ -5,7 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+      romantic: ["Pinyon Script", "cursive"],
+      fancy: ["Rouge Script", "cursive"],
+      soft: ["Cedarville Cursive", "cursive"],
+      handwritten: ["Bad Script", "cursive"],
+    },
   },
   plugins: [],
 }

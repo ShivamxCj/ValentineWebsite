@@ -1,4 +1,6 @@
 import { FaHeart, FaEnvelope, FaRing, FaPaperPlane } from "react-icons/fa";
+import { FaGamepad } from "react-icons/fa";
+import { FaClock } from "react-icons/fa";
 
 export default function Navbar() {
   return (
@@ -22,6 +24,20 @@ export default function Navbar() {
           className="hover:scale-125 hover:text-pink-300 transition"
         >
           <FaHeart />
+        </a>
+
+        <a
+          href="#timeline"
+          className="hover:scale-125 hover:text-pink-300 transition"
+        >
+          <FaClock />
+        </a>
+
+        <a
+          href="#game"
+          className="hover:scale-125 hover:text-pink-300 transition"
+        >
+          <FaGamepad />
         </a>
 
         <a

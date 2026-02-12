@@ -43,7 +43,7 @@ const moveNo = () => {
           <>
             <h1
               className="text-center text-4xl sm:text-xl md:text-4xl font-extrabold 
-               mb-6 text-white drop-shadow-xl leading-snug"
+               mb-6 text-white drop-shadow-xl leading-snug fancy"
             >
               Will you marry me
               <br />
@@ -51,7 +51,7 @@ const moveNo = () => {
               ? 💍❤️
             </h1>
 
-            <p className="text-white/80 mb-10 text-lg">
+            <p className="text-white/80 mb-10 text-lg soft">
               Together forever, hand in hand, heart to heart ✨
             </p>
 
@@ -81,9 +81,9 @@ const moveNo = () => {
 
           </>
         ) : (
-          <div className="animate-fade-in text-center">
-            <h1 className="text-4xl sm:text-5xl font-extrabold mb-6 text-white drop-shadow-xl">
-              Okay Mrs. Naina Chatterjee 😭❤️
+          <div className="animate-fade-in text-center handwritten">
+            <h1 className="text-2xl sm:text-4xl font-extrabold mb-6 text-white drop-shadow-xl">
+              Okay Mrs. Naina Chatterjee ❤️
             </h1>
 
             <p className="text-xl sm:text-2xl text-white/90">

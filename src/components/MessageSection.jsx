@@ -1,25 +1,42 @@
+import { useEffect, useState } from "react";
+
 export default function MessageSection() {
+  const text = "Happy Valentine’s Day Baby 💖";
+  const [displayText, setDisplayText] = useState("");
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    if (index < text.length) {
+      const timer = setTimeout(() => {
+        setDisplayText((prev) => prev + text[index]);
+        setIndex((prev) => prev + 1);
+      }, 200);
+      return () => clearTimeout(timer);
+    }
+  }, [index]);
+
   return (
     <div
       className="relative min-h-screen flex flex-col items-center justify-center
       bg-gradient-to-b from-[#720026] to-[#1b0f2f]
-      px-4 overflow-hidden font-['Bad Script',cursive] italic"
+      px-4 overflow-hidden "
     >
       {/* Romantic Heading */}
       <h1
-        className="relative z-10 mb-6 text-4xl sm:text-6xl
+        className="relative z-10 mb-16 text-4xl sm:text-6xl
         font-['Rouge Script',cursive]
-        text-white drop-shadow-lg tracking-wide font-semibold mb-20"
+        text-white drop-shadow-lg tracking-wide font-semibold text-center fancy"
       >
-        Happy Valentine’s Day Baby 💖
+        {displayText}
+        <span className="animate-blink">|</span>
       </h1>
 
-      {/* Animated Floating Dots Background */}
+      {/* Floating Glowing Dots */}
       <div className="absolute inset-0 pointer-events-none">
         {Array.from({ length: 35 }).map((_, i) => (
           <span
             key={i}
-            className="absolute w-2 h-2 bg-white/25 rounded-full animate-float"
+            className="absolute w-2 h-2 bg-white/25 rounded-full animate-float blur-[1px]"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
@@ -41,25 +58,25 @@ export default function MessageSection() {
         <h2
           className="text-2xl sm:text-4xl mb-4
           font-['Bad Script',cursive]
-          text-white drop-shadow-md"
+          text-white drop-shadow-md handwritten"
         >
           My Message For You 💌
         </h2>
 
         <p
           className="text-sm sm:text-lg leading-relaxed
-          font-['Bad Script',cursive]
-          text-white/90"
+          font-['Cedarville Cursive',cursive]
+          text-white/90 handwritten "
         >
-          From the moment you entered my life, everything became brighter,
-          warmer, and happier. You are my peace, my madness, my love, and my
-          forever. Every heartbeat of mine whispers your name.
-          <br /><br />
-          I love you more than words, more than time, more than life itself. ❤️
+          You are very special to me, more than you’ll ever know. I know things
+          aren’t perfect right now — it’s not you, it’s not me, it’s just the
+          situation. But no matter what, I believe in us. As long as we’re
+          together, everything will be okay.
+          <br /> Happy Valentine’s Day, my love ❤️
         </p>
       </div>
 
-      {/* Floating Animation */}
+      {/* Animations */}
       <style jsx>{`
         @keyframes float {
           0% {
@@ -68,7 +85,7 @@ export default function MessageSection() {
           }
           50% {
             transform: translateY(-18px);
-            opacity: 0.7;
+            opacity: 0.8;
           }
           100% {
             transform: translateY(0px);
@@ -78,6 +95,23 @@ export default function MessageSection() {
 
         .animate-float {
           animation: float linear infinite;
+        }
+
+        @keyframes blink {
+          0%,
+          50%,
+          100% {
+            opacity: 1;
+          }
+          25%,
+          75% {
+            opacity: 0;
+          }
+        }
+
+        .animate-blink {
+          animation: blink 1s infinite;
+          margin-left: 2px;
         }
       `}</style>
     </div>

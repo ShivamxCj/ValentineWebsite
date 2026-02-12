@@ -97,3 +97,17 @@ html {
 .sparkle-btn:hover::before {
   opacity: 1;
 }
+.romantic {
+  font-family: "Pinyon Script", cursive;
+}
+.fancy {
+  font-family: "Rouge Script", cursive;
+}
+
+.soft {
+  font-family: "Cedarville Cursive", cursive;
+}
+
+.handwritten {
+  font-family: "Bad Script", cursive;
+}
